@@ -1,0 +1,28 @@
+﻿.svg {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+path {
+  animation: dash 12.5s cubic-bezier(0.46,0.03,0.52,0.96) 0s normal forwards 1 running;
+  -webkit-animation: dash 12.5s cubic-bezier(0.46,0.03,0.52,0.96) 0s normal forwards 1 running;
+  -moz-animation: dash 12.5s cubic-bezier(0.46,0.03,0.52,0.96) 0s normal forwards 1 running;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
