@@ -57,7 +57,7 @@ p.large {
   overflow: auto;
 }
 .shadow {
-  box-shadow: 5px 5px 5px #ccd3d8;
+  box-shadow: 5px 5px 5px #bdc5cc;
 }
 .scroll-box {
   overflow: auto;
@@ -816,11 +816,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #777777;
+  background: #bdc5cc;
 }
 ::selection {
   text-shadow: none;
-  background: #777777;
+  background: #bdc5cc;
 }
 img::selection {
   background: transparent;
