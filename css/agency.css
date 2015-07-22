@@ -26,7 +26,7 @@ p.large {
 }
 #left {
   text-align: center;
-  vertical-align: middle !important;
+  margin-top: 50px !important;
 }
 .service-img {
   height: 400px;
@@ -191,7 +191,7 @@ fieldset[disabled] .btn-primary.active {
   text-transform: uppercase;
   color: black;
   font-weight: 700;
-  border-radius: 3px;
+  border-radius: 0;
   font-size: 18px;
   padding: 20px 40px;
 }
@@ -279,7 +279,7 @@ fieldset[disabled] .btn-xl.active {
   outline: none;
 }
 .navbar-default .navbar-nav > .active > a {
-  border-radius: 0;
+  border-radius: 0 !important;
   color: white;
   background-color: #000000;
 }
@@ -287,6 +287,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
   background-color: #000000;
+}
+.navbar-toggle {
+  border-radius: 0px !important;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -304,7 +307,7 @@ fieldset[disabled] .btn-xl.active {
     transition: all 0.3s;
   }
   .navbar-default .navbar-nav > .active > a {
-    border-radius: 3px;
+    border-radius: 0px;
   }
   .navbar-default.navbar-shrink {
     background-color: #bdc5cc;

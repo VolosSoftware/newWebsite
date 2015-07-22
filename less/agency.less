@@ -38,7 +38,7 @@ p.large {
 
 #left {
   text-align: center;
-  vertical-align: middle !important;
+  margin-top: 50px !important;
 }
 
 .service-img {
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 	.button-variant(white; @brand-primary; @brand-primary);
 	.heading-font;
 	font-weight: 700;
-	border-radius: 3px;
+	border-radius: 0;
 	font-size: 18px;
 	padding: 20px 40px;
 }
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     	}
     }
 	.navbar-nav>.active>a {
-		border-radius: 0;
+		border-radius: 0 !important;
 		color: white;
 		background-color: @brand-primary;
 	}
@@ -254,6 +254,9 @@ h1, h2, h3, h4, h5, h6 {
 		color: white;
 		background-color: darken(@brand-primary, 10%);
 	}
+}
+.navbar-toggle {
+  border-radius: 0px !important
 }
 
 @media(min-width:768px) {
@@ -271,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 	        transition: all 0.3s;
 	    }
 		.navbar-nav>.active>a {
-			border-radius: 3px;
+			border-radius: 0px;
 		}
     }
     .navbar-default.navbar-shrink {
