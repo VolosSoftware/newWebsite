@@ -59,6 +59,7 @@ $(function () {
     // Simple 100 day brownian motion
 
 var paths = 10;
+var steps = 150;
 var length = [];
 var path = [];
 var data = [];
@@ -76,8 +77,8 @@ var today = new Date();
     for (j=0; j<paths; j++) {
 
         var close = 100;
-        //i value is the number of steps
-        for (var i = 0; i < 80; i++) {
+
+        for (var i = 0; i < steps; i++) {
             var dateString = today.toDateString();
             var splitDate = dateString.split(" ");
 
@@ -113,14 +114,14 @@ var today = new Date();
             .datum(data[j])
             .attr("class", "line"+j)
             .attr("d", line)
-            .style({'fill': 'none', 'stroke-width': 3+'px', 'stroke-opacity': randomFromInterval(.3, .5)})
+            .style({'fill': 'none', 'stroke-width': 3+'px', 'stroke-opacity': randomFromInterval(.3, .6)})
             .style({'stroke':function() {
                 if (j<paths/3) {
                     return '#707280'
                 } else if (j<paths*2/3) {
-                    return '#93231f'
+                    return '#6B0000'
                 } else {
-                    return '#175d72 '
+                    return '#096098 '
                 }
                 /*function() {
                 if (j<paths/4) {
