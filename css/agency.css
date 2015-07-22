@@ -236,7 +236,7 @@ fieldset[disabled] .btn-xl.active {
 }
 #blank {
   height: 1px !important;
-  margin: -80px !important;
+  margin: -40px !important;
 }
 .navbar-default {
   background-color: #bdc5cc;
