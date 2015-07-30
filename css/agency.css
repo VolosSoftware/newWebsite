@@ -57,7 +57,7 @@ p.large {
   overflow: auto;
 }
 .shadow {
-  box-shadow: 5px 5px 5px #bdc5cc;
+  box-shadow: 5px 5px 5px #ccd4db;
 }
 .scroll-box {
   overflow: auto;
@@ -239,7 +239,7 @@ fieldset[disabled] .btn-xl.active {
   margin: -40px !important;
 }
 .navbar-default {
-  background-color: #bdc5cc;
+  background-color: #ccd4db;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
@@ -253,7 +253,7 @@ fieldset[disabled] .btn-xl.active {
   color: #000000;
 }
 .navbar-default .navbar-collapse {
-  border-color: #bdc5cc;
+  border-color: #ccd4db;
 }
 .navbar-default .navbar-toggle {
   background-color: #000000;
@@ -310,7 +310,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 0px;
   }
   .navbar-default.navbar-shrink {
-    background-color: #bdc5cc;
+    background-color: #ccd4db;
     opacity: 0.95;
     padding: 10px 0;
   }
@@ -819,11 +819,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #bdc5cc;
+  background: #ccd4db;
 }
 ::selection {
   text-shadow: none;
-  background: #bdc5cc;
+  background: #ccd4db;
 }
 img::selection {
   background: transparent;

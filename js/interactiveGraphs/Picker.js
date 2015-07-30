@@ -117,12 +117,19 @@ var today = new Date();
             .style({'fill': 'none', 'stroke-width': 3+'px', 'stroke-opacity': randomFromInterval(.3, .6)})
             .style({'stroke':function() {
                 if (j<paths/3) {
+                    return 'lightgray'
+                } else if (j<paths*2/3) {
+                    return 'lightblue'
+                } else {
+                    return 'lightgreen'
+                }
+                /*if (j<paths/3) {
                     return '#707280'
                 } else if (j<paths*2/3) {
                     return '#6B0000'
                 } else {
                     return '#096098 '
-                }
+                }*/
                 /*function() {
                 if (j<paths/4) {
                     return '#FFFF00'
