@@ -31,6 +31,10 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,6 +42,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </head>
 
@@ -54,27 +62,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img class="img-responsive" src="img/navImg.png" id="nav-logo"/></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="img-responsive" src="img/websitesvg/VPS_Volos%20Name.svg" id="nav-logo" style="margin-top: 5px; width: 150px"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a class="page-scroll active" href="#page-top">Home</a>
+                        <a class="page-scroll" id="Technology" href="templates/technology.html">Technology</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#abc">Firm</a>
+                        <a class="page-scroll" id="Firm" href="templates/firm.html">Firm</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" id="Contact" href="templates/contact.html">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" id="Schedule" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@volossoftware.com&subject=Demo" target="_blank">Schedule a Demo</a>
                     </li>
                 </ul>
             </div>
@@ -84,225 +88,232 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header id="indexHeader">
 
-        <div id="chart-area">
-            <div id="chart"></div>
-        </div>
-        <div class="container-fluid" id="volos-text">
+        <video class="video-item" width="100%" height="auto" autoplay="" loop="" style="-webkit-filter: blur(8px);">
+            <source src="img/homeImages/shutterstock_v3570359.mp4" type="video/mp4">
+        </video>
 
+        <div class="container-fluid" id="volos-text" style="margin-top: 10px">
+
+            <!--<p style="vertical-align: middle; color: black; margin-top: 400px">Unleash the Power <br> of OTC Options</p>-->
 
         <div class="intro-text">
-            <div class="intro-heading">Volos Portfolio Solutions</div>
+            <div class="intro-heading" style="font-size: 70px; line-height: 75px;">Unleash the Power <br> of Options Investing</div>
         </div>
 
         </div>
+
+
+
     </header>
 
     <section id="blank"></section>
 
-    <!-- Firm Section -->
-    <section id="abc"><br><br>
+    <section id="services" class="wow slideInLeft"><br><br>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Firm</h2>
-                    <h3 class="section-subheading text-muted">Volos Portfolio Solutions LLC provides pre-trade analysis software for investment
-                        managers who seek to supplement their portfolio with nonstandard derivative products.
+                    <h3 class="section-heading">
+                        Chances are you are not taking full advantage of the range of investment opportunities offered by Over the Counter (OTC) options. Volos is the first intuitive OTC options analysis platform.
                     </h3>
                 </div>
             </div><br>
-            <div class="row text-justify">
-                <p class="lead">Active managers have trade ideas that are more
-                    intricate than those of regular investors. We believe that
-                    those intricate ideas are not expressed efficiently in financial
-                    markets through simple long/short positions. We offer managers
-                    an edge by allowing them to express their trade ideas as effectively as possible.</p>
-                <p class="lead"><strong>Volos Portfolio Solutions provides optimization software for
-                    financial derivative strategies.</strong> The Volos platform allows managers
-                    to translate their ideas into derivative strategies that are optimally
-                    suited for expressing their detailed views. After finding optimal
-                    derivative trades through stochastic optimization and machine learning,
-                    the Volos platform provides managers with advanced pre trade analysis tools. </p>
+            <center>
+            <div class="row" style="width: 70%;">
+                <div class="col-lg-3 text-center">
+                    <div class="row">
+                        <img src="img/websitesvg/VPS_Optimize%20Black.svg" style="width: 200px">
+                    </div>
+                    <div class="row">
+                        <h2 class="text-center light-blue-text">OPTIMIZE</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="row">
+                        <img src="img/websitesvg/VPS_Structure%20Black.svg" style="width: 200px; margin-top: 20px">
+                    </div>
+                    <div class="row">
+                        <h2 class="text-center light-blue-text">STRUCTURE</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="row">
+                        <img src="img/websitesvg/VPS_Analyze%20Black.svg" style="width: 200px">
+                    </div>
+                    <div class="row">
+                        <h2 class="text-center light-blue-text">ANALYZE</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <div class="row">
+                        <img src="img/websitesvg/VPS_Manage%20Black.svg" style="width: 200px">
+                    </div>
+                    <div class="row">
+                        <h2 class="text-center light-blue-text">MANAGE</h2>
+                    </div>
+                </div>
+            </div>
+            </center>
+        </div>
+
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="options" class="wow slideInRight light-blue-background"><br><br>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading white-text">OTC Options</h2>
+                    <h3 class="section-heading text-muted white-text">A True Source of Uncorrelated Alpha
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="img/websitesvg/VPS_Payoff.svg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Firm Section -->
+    <section id="abc" class="wow slideInLeft"><br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <div class="single-item" style="width: 60%">
+                           <center>
+                                <h3 class="section-heading orange-text">
+                                    There are much better ways to express your ideas than going long or short
+                                </h3>
+                           </center>
+                            <center>
+                                <h3 class="section-heading orange-text">
+                                    A better way to invest in your abilities and accuracy
+                                </h3>
+                            </center>
+                            <center>
+                                <h3 class="section-heading orange-text">
+                                    Margin trading exposes managers to unnecessary risk
+                                </h3>
+                            </center>
+                            <center>
+                                <h3 class="section-heading orange-text">
+                                    You shouldn’t have to be consistently right on big moves up or down
+                                </h3>
+                            </center>
+                            <center>
+                                <h3 class="section-heading orange-text">
+                                    You just have to be right a few times, on any move, or no move at all.
+                                </h3>
+                            </center>
+                       </div>
+                    </center>
+                </div>
             </div>
         </div><br>
 
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-light-gray"><br><br>
+    <section id="demo" class="wow slideInRight light-blue-background"><br><br>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">We build software that helps differentiate skilled managers
-                        by providing our clients with the best tools for structuring and analyzing exotic derivative trades.
-                    </h3>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@volossoftware.com&subject=Demo" target="_blank">
+                    <button class="btn btn-primary">
+                        <h3 class="section-heading white-text" style="margin-top: 15px">
+                            Schedule a Demo
+                        </h3>
+                    </button>
+                    </a>
                 </div>
             </div><br>
-            <div class="row">
-                <div class="col-sm-8 text-left" >
-                    <p class="lead">The Volos platform provides investment managers,
-                        traders, structurers, and analysts with unparalleled trade insight.</p>
-                    <ul class="lead">
-                        <li>Valuation for all Exotic Options</li>
-                        <li>Trade Optimization Services</li>
-                        <li>Advanced Pre-Trade Analysis and Visualization</li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/servicesPenPaper.png" style="height: 300px"class="img-responsive shadow"/>
-                </div>
-            </div>
         </div>
+
     </section>
 
-    <!-- Team Section -->
-    <section id="team"><br><br>
-        <div class="container-fluid" id="employees">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Team</h2>
-                    <h3 class="section-subheading text-muted">The Volos team is a dedicated group of professionals with experience in
-                        both the financial services and software development fields.
-                    </h3>
-                </div>
-            </div>
-            <div class="row " >
-              <!-- Nav tabs -->
-                <div class="col-md-4 margin-top" >
-                  <ul class="nav nav-pills nav-stacked bg-light-gray shadow" role="tablist" id="pills-container">
-                      <li><p class="lead">Management</p></li>
+    <section id="partners" class="wow slideInLeft">
 
-                    <li role="presentation" class="active"><a href="#dCorcoran" aria-controls="dCorcoran" role="tab" data-toggle="tab">Dan Corcoran <em class="small">Chief Exective Officer</em></a></li>
-                    <li role="presentation"><a href="#sultan" aria-controls="sultan" role="tab" data-toggle="tab">Saif Sultan <em class="small">Chief Development Officer</em></a></li>
-                    <li role="presentation"><a href="#long" aria-controls="long" role="tab" data-toggle="tab">C. Jack Long <em class="small">CFO & Managing Director</em></a></li>
-                    <li role="presentation"><a href="#kapadia" aria-controls="kapadia" role="tab" data-toggle="tab">Shashank Kapadia <em class="small">Director of Quantitative Research</em></a></li>
-                    <li role="presentation"><a href="#boesch" aria-controls="boesch" role="tab" data-toggle="tab">Austin Boesch <em class="small">Software Development Engineer</em></a></li>
-                    <li role="presentation"><a href="#tCorcoran" aria-controls="tCorcoran" role="tab" data-toggle="tab">Tom Corcoran <em class="small">Software Development Engineer</em></a></li>
-                      <li class="pills-inline"><p class="lead">Advisors</p></li>
-                      <li role="presentation"><a href="#darsney" aria-controls="darsney" role="tab" data-toggle="tab">Matt Darsney <em class="small">Software Industry Advisor</em></a></li>
-                    <li role="presentation"><a href="#davies" aria-controls="davies" role="tab" data-toggle="tab">Dr. Ryan Davies <em class="small">Business Advisor</em></a></li>
-                    <li role="presentation"><a href="#kempthorne" aria-controls="kempthorne" role="tab" data-toggle="tab">Dr. Peter Kempthorne <em class="small">Industry Advisor</em></a></li>
-
-                  </ul>
-                </div>
-
-                <div class="col-md-8 text-justify margin-top">
-                  <!-- Tab panes -->
-                  <div class="tab-content bg-light-gray" >
-                    <div role="tabpanel" class="tab-pane shadow active" id="dCorcoran">
-
-Dan's passion for quantitative finance led him to start Volos Portfolio Solutions. Dan assembled the financial, mathematical, and engineering talents of the Volos team to develop software suited for the financial services industry of the future. He has experience in the hedge fund industry at SCS Financial, working on a team to analyze private equity and hedge funds. Dan is currently on a leave of absence from Babson College, where he is a Weissman Scholar, and has completed coursework at MIT, Olin College of Engineering, and Harvard University.
-<br><br>
-dan.corcoran@volossoftware.com
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="sultan">
-
-
-Saif co-founded Volos after developing algorithmic trading strategies with Dan throughout 2013 and 2014. Saif provides a level of mathematical aptitude above the levels of most other market participants. The broad scope of Saif’s ability allows him to apply advanced mathematical theory to complex asset pricing and strategy optimization. Saif completed a BS in Electrical Engineering from the National University of Science and Technology in Pakistan, and a Masters degree in Mathematics from Northeastern University, where he graduated Summa Cum Laude.
-<br><br>
-saif.sultan@volossoftware.com
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="long">
-
-
-Jack heads the sales and finance side of the company, and provides the development team with guidance on current industry trends and standards. His market knowledge, and broad academic background are essential to connecting the multiple components of the business including front end application development. Jack is expected to earn a BS from Babson College in May of 2015 concentrating in Accounting and Computational and Mathematical Finance, and a Certificate in Engineering Studies from the Franklin W. Olin College of Engineering concentrating in Mechanical Engineering.
-<br><br>
-jack.long@volossoftware.com
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="kapadia">
-
-
-Shashank adds a layer of technical aptitude to the Volos team with his knowledge of machine learning and large-scale data analysis. Raised in India, where he earned a BS in Electrical Engineering from the University of Pune, Shashank went on to pursue a Master’s degree in Operations Research with a research focus on Mathematical Modeling and Statistics at Northeastern University. Shashank finished his coursework at Northeastern Summa Cum Laude and was able to work for 8 months as a quantitative analyst for TrueLight Energy, developing efficient trading algorithms for Virtuals (energy derivatives). As a graduate research assistant at Healthcare Systems Engineering Institute (HSyE), he worked on a CHOT research project to build predictive models for patient management and flow using the concept of probability convolution.
-<br><br>
-shashank.kapadia@volossoftware.com
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="boesch">
-                    Austin plays a key role in engineering various black-box optimization algorithms as well as developing solutions to the difficult technical problems inherit in asset pricing. Austin is expected to graduate from MIT in May of 2015 with BS degree in Brain and Cognitive Sciences.
-                    <br><br>
-                    austin.boesch@volossoftware.com
-
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="tCorcoran">
-                    Tom leads front end user-interface and mobile development at Volos, and seeks to represent the intricacies of complex financial products in a graphical and intuitive fashion. Tom has experience designing and developing his own applications for mobile devices and is proficient in a number of programming languages including Objective C, PHP, Java, JavaScript, HTML, CSS, and SQL.
-                    <br><br>
-                    tom.corcoran@volossoftware.com
-
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane shadow " id="darsney">
-                        Matt wears his passion for big data analytics, high performance computing, and applied mathematics on his sleeve. During his time at Tufts University, Matt earned his chops taking almost every Computer Science and Mathematics course offered, graduating with an M.Sc in Applied Mathematics and authoring a thesis in distributed graphics processing. Now living in Seattle Washington and working as a software development engineer at Microsoft Corporation, Matt spends his days (and many nights) at the keyboard coding the next big thing, and his weekends neck deep in powder at Crystal Mountain. For the Volos team, Matt provides the team with broad technical insight in fields such as multidimensional data visualization and industry security standards.
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="davies">
-                        <div class="scroll-box">
-                        Ryan J. Davies is an Associate Professor of Finance at Babson College, and the Faculty Director of the Stephen D. Cutler Center for Investments and Finance. He teaches advanced undergraduate and MBA finance electives, including Security Valuation, Options and Futures, Fixed Income, and Capital Markets. Prior to joining Babson College, Dr. Davies taught at the ICMA Centre of the University of Reading in England. He has also taught various modules in the International Capital Market Association's International Fixed Income and Derivatives program and has taught the course Global Financial Management for the HSE Executive MBA program in Seoul, Korea.<br><br>
-                     Recently, Dr. Davies has been estimating the extent to which various market frictions cause systematic patterns in the delayed incorporation of public information into intraday stock prices.  He is also studying how trade in equity options can impact the prices of their underlying stocks, and how to measure the direct and indirect costs of manipulation in futures markets. He also helped develop a widely-cited portfolio optimization method for the fund of hedge funds. Areas of expertise also include Algorithmic and High Frequency Trading; Hedge Funds and Fixed Income.<br><br>
-                     Dr. Davies is an active invited participant at the NBER Market Microstructure Working Group meetings, as well as a frequent presenter and discussant at conferences such as the Western Finance Association meetings and Financial Management Association meetings. His research has been published in peer-reviewed journals such as the Journal of Financial Markets, Journal of Derivatives and Hedge Funds, Canadian Journal of Economics, Journal of Futures Markets, and Economics Letters.
-                     Dr. Davies received his B.A in Economics with Mathematics from St. Francis Xavier University and his M.A and Ph.D in Finance and Econometrics from Queen's University at Kingston.
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane shadow " id="kempthorne">
-                        <div class="scroll-box">
-                        Dr. Kempthorne received his A.B. magna cum laude degree in applied mathematics from Harvard University and was elected to the Alpha Chapter of Phi Beta Kappa. He pursued graduate studies in statistics receiving the M.Sc. degree and the Diploma of Imperial College award from the University of London, and a Ph.D. from the University of California Berkeley. While an Assistant Professor of Statistics at Harvard, he was awarded a Postdoctoral Mathematical Sciences Research Fellowship by the National Science Foundation. He then joined the faculty of MIT at the Sloan School of Management as a visiting Assistant Professor and was promoted
-                            to Associate Professor of Management Science. From 1990 to 1998, Dr. Kempthorne also served as a Principal Research Scientist at the MIT Sloan School of Management conducting research at the Center for Computational Research in Economics and Management Science (CCREMS) and at the International Financial Services Research Center (IFSRC). He was an active member of the Risk Management Working Group and developed analytics incorporated in the industry-standard RiskMetrics methodology. In 2013 Dr. Kempthorne joined the MIT mathematics department as a lecturer in financial mathematics and statistics.<br><br> 
-                    Dr. Kempthorne has been providing consulting services in financial and statistical analytics to a wide range of institutions through his company Kempthorne Analytics, Inc. and has been an investment manager, exploiting advanced statistical analytics to manage a variety of investment programs. From 2010-2012 he was portfolio manager and senior researcher at IKOS, CIF Ltd. Dr. Kempthorne co-founded Chronos Asset Management in 1995 and Summa Capital Management in 1996. His firm Kempthorne Analytics is currently registered as an investment adviser and manages systematic quantitative investment programs for retail clients.
-                        </div>
-                    </div>
-                      
-                  </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section class="bg-light-gray" id="contact"><br><br>
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">
-                        Contact Us
-                    </h2>
+                    <h2 class="section-heading">Partners</h2>
                 </div>
             </div><br>
-            <div class="row" >
-                <div class="col-lg-4" id="left">
-                    <p class="lead">
 
-                    One Boston Place, Suite 2600
-                    201 Washington Street
-                    Boston, MA, 02109
-                    </p>
-                    <p class="lead">
-                        Office: 857-239-8838
-                    </p>
-                    <p class="lead">
-                        dan.corcoran@volossoftware.com
-                    </p>
+            <div class="row">
+                <div class="col-lg-2 text-center">
+                    <a href="http://fintechsandbox.org/" target="_blank">
+                        <img src="img/newImages/logo-fintech-sandbox_0.png" style="width: 150px; margin-bottom: 10px">
+                    </a>
                 </div>
-                <div class="col-lg-8 text-center" id="map-column">
-                    <div class="google-maps shadow">
-                        <iframe width="600px" height="450px" frameborder="0" style="border:0" allowfullscreen
-                        src="https://www.google.com/maps/embed/v1/place?q=1%20Boston%20Place&key=AIzaSyAaSApL1Tw60C5oD-YR4dh0sHlRtVck_Fo"></iframe>
-                    </div>
+                <div class="col-lg-2 text-center">
+                    <a href="https://aws.amazon.com/" target="_blank">
+                        <img src="img/newImages/Amazon_Logo.png" style="width: 150px; margin-bottom: 10px">
+                    </a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="https://kaazing.com/" target="_blank">
+                        <img src="img/newImages/Kaazing_logo.png" style="width: 150px; margin-bottom: 10px">
+                    </a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="http://www.xignite.com/" target="_blank">
+                        <img src="img/newImages/logo-xignite.png" style="width: 150px; margin-bottom: 10px">
+                    </a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="https://www.nyse.com/index" target="_blank">
+                        <img src="img/newImages/nyse_euronext.png" style="width: 100px; margin-bottom: 10px">
+                    </a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="http://www.nasdaq.com/" target="_blank">
+                        <img src="img/newImages/nasdaq.png" style="width: 150px">
+                    </a>
                 </div>
             </div>
+
         </div>
 
     </section>
-
 
     <footer class="bg-darkest-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-4 col-xs-push-4 center-block">
-                    <img class="img-responsive" src="img/footerImage.png" class="footer-logo"/>
+            <div class="row" style="margin-bottom: 20px">
+                <div class="col-lg-6">
+                    <img class="img-responsive" src="img/websitesvg/VolosLogoWithSlogan.svg" />
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="service-heading white-text footer-text-left">About Us</h3>
+                    <ul class="footer-text-left" style="list-style-type:none; margin-left: -40px; font-size: 15px">
+                      <li><a href="templates/firm.html" class="white-text">Firm</a></li>
+                      <li><a href="templates/firm.html" class="white-text">Team</a></li>
+                      <li><a href="templates/technology.html" class="white-text">Services</a></li>
+                      <li><a href="templates/legal.html" class="white-text">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="service-heading white-text footer-text-left">Contact</h3>
+                    <ul class="white-text footer-text-left" style="list-style-type:none; margin-left: -40px; font-size: 15px">
+                      <li><a href="index.html" class="white-text">Sales</a></li>
+                      <li><a href="index.html" class="white-text">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="service-heading white-text footer-text-left">Social</h3>
+                    <ul class="white-text footer-text-left" style="list-style-type:none; margin-left: -40px; font-size: 15px">
+                      <li><a href="https://www.linkedin.com/company/volos-portfolio-solutions" class="white-text" target="_blank"><i class="white-text fa fa-linkedin"></i> Linkedin</a></li>
+                      <li><a href="https://twitter.com/volossoftware" class="white-text" target="_blank"><i class="white-text fa fa-twitter"></i> Twitter</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
@@ -310,23 +321,8 @@ shashank.kapadia@volossoftware.com
                     <p id="footer-text"> © 2015 Volos Portfolio Solutions, All Rights Reserved</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-push-4">
-                    <ul class="list-inline social-buttons">
-                        <li>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/volos-portfolio-solutions" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -345,6 +341,20 @@ shashank.kapadia@volossoftware.com
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.single-item').slick({
+              autoplay: true,
+              autoplaySpeed: 8000,
+              prevArrow:"<img class='control-c prev slick-prev' src='img/websitesvg/VPS_Orange%20Left.svg' style='background-color: transparent'>",
+              nextArrow:"<img class='control-c next slick-next' src='img/websitesvg/VPS_Orange%20Right.svg' style='background-color: transparent'>"
+          });
+      });
+    </script>
 
 
 </body>

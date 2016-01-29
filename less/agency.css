@@ -220,6 +220,7 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+    color: white;
   }
 }
 header {
